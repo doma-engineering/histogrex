@@ -107,8 +107,8 @@ defmodule Histogrex do
       Module.register_attribute(__MODULE__, :histogrex_registry, accumulate: true)
 
       @doc false
-      def start_link() do
-        {:ok, pid} = GenServer.start_link(__MODULE__, :ok)
+      def start_link(init_arg \\ :ok) do
+        {:ok, pid} = GenServer.start_link(__MODULE__, init_arg)
         GenServer.call(pid, :register_tables)
         {:ok, pid}
       end
