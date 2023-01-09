@@ -21,7 +21,7 @@ First, add `histogrex` to your`mix.exs` file:
 
 ```
 def deps do
-  [{:histogrex, "~> 0.0.5"}]
+  [{:doma_histogrex, "~> 0.0.5"}]
 end
 ```
 

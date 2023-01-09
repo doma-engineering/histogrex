@@ -1,11 +1,11 @@
 defmodule Histogrex.Mixfile do
   use Mix.Project
 
-   @version "0.0.5"
+  @version "0.0.5"
 
   def project do
     [
-      app: :histogrex,
+      app: :doma_histogrex,
       deps: deps(),
       elixir: "~> 1.14",
       name: "Histogrex",
@@ -15,14 +15,10 @@ defmodule Histogrex.Mixfile do
       package: [
         licenses: ["MIT"],
         links: %{
-          "GitHub" => "https://github.com/2nd/histogrex"
+          "Github" => "https://github.com/doma-engineering/histogrex",
+          "Upstream" => "https://github.com/2nd/histogrex"
         },
-        maintainers: ["Karl Seguin"],
-      ],
-      docs: [
-        source_ref: "v#{@version}", main: "Histogrex",
-        canonical: "http://hexdocs.pm/histogrex",
-        source_url: "https://github.com/2nd/histogrex",
+        maintainers: ["Karl Seguin"]
       ]
     ]
   end
